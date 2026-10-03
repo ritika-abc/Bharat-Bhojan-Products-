@@ -1,0 +1,85 @@
+/* =========================================================================
+   BALAJEE ENTERPRISES — ANIMATION STYLESHEET
+   Keyframes + AOS overrides. GSAP-driven motion lives in js/animations.js.
+   ========================================================================= */
+
+/* -------- floating leaf drift -------- */
+@keyframes leafDrift{
+  0%{transform:translate(0,0) rotate(0deg);}
+  50%{transform:translate(14px,-22px) rotate(12deg);}
+  100%{transform:translate(0,0) rotate(0deg);}
+}
+.deco-leaf{animation:leafDrift 7s ease-in-out infinite;}
+.deco-leaf.d2{animation-duration:9s;animation-delay:.6s;}
+.deco-leaf.d3{animation-duration:6s;animation-delay:1.2s;}
+
+/* -------- slow ring rotation -------- */
+@keyframes ringSpin{to{transform:rotate(360deg);}}
+.deco-ring{animation:ringSpin 40s linear infinite;}
+.deco-ring.reverse{animation-direction:reverse;animation-duration:55s;}
+.stamp{animation:ringSpin 60s linear infinite;}
+
+/* -------- particle float -------- */
+@keyframes particleFloat{
+  0%,100%{transform:translateY(0) scale(1);opacity:.5;}
+  50%{transform:translateY(-26px) scale(1.15);opacity:.9;}
+}
+.deco-particle{animation:particleFloat 5s ease-in-out infinite;}
+
+/* -------- gentle glow pulse -------- */
+@keyframes glowPulse{
+  0%,100%{opacity:.55;}
+  50%{opacity:.9;}
+}
+.deco-glow{animation:glowPulse 6s ease-in-out infinite;}
+
+/* -------- preloader bar shimmer (fallback if GSAP disabled) -------- */
+@keyframes barGrow{from{width:0%;}to{width:100%;}}
+
+/* -------- scroll cue line -------- */
+@keyframes cueTravel{
+  0%{transform:translateY(-100%);}
+  100%{transform:translateY(100%);}
+}
+.hero-scroll-cue .cue-line::after{
+  content:"";position:absolute;inset:0;background:var(--cream);
+  animation:cueTravel 1.8s ease-in-out infinite;
+}
+
+/* -------- card shine sweep -------- */
+@keyframes shineSweep{
+  0%{transform:translateX(-120%) skewX(-15deg);}
+  100%{transform:translateX(220%) skewX(-15deg);}
+}
+.card-shine{
+  position:absolute;top:0;bottom:0;width:40%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
+  pointer-events:none;opacity:0;
+}
+.product-card:hover .card-shine{opacity:1;animation:shineSweep 1.1s ease;}
+
+/* -------- pulse dot (contact / status accents) -------- */
+@keyframes pulseDot{
+  0%{box-shadow:0 0 0 0 rgba(217,154,22,.5);}
+  70%{box-shadow:0 0 0 10px rgba(217,154,22,0);}
+  100%{box-shadow:0 0 0 0 rgba(217,154,22,0);}
+}
+.pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulseDot 2.2s infinite;}
+
+/* -------- footer big leaf sway -------- */
+@keyframes leafSway{
+  0%,100%{transform:rotate(-4deg);}
+  50%{transform:rotate(4deg);}
+}
+.footer-leaf-bg i{display:inline-block;animation:leafSway 10s ease-in-out infinite;transform-origin:center;}
+
+/* -------- AOS tuning -------- */
+[data-aos]{pointer-events:none;}
+[data-aos].aos-animate{pointer-events:auto;}
+
+/* -------- reduced motion overrides -------- */
+@media (prefers-reduced-motion:reduce){
+  .deco-leaf,.deco-ring,.stamp,.deco-particle,.deco-glow,.hero-scroll-cue .cue-line::after,.footer-leaf-bg i{
+    animation:none !important;
+  }
+}

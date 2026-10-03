@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | BALAJEE ENTERPRISES — Indian Agricultural Exporter</title>
+<meta name="description" content="Learn about Balajee Enterprises' sourcing philosophy, quality focus and export-oriented approach connecting Indian agricultural products to global buyers.">
+<link rel="canonical" href="#">
+<meta property="og:title" content="About Us | BALAJEE ENTERPRISES">
+<meta property="og:description" content="Rooted in India. Connected to the world.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/about-hero.jpg">
+
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="grain-overlay" aria-hidden="true"></div>
+<div id="scroll-progress" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<div id="preloader" aria-hidden="true">
+  <div class="loader-seed"><svg viewBox="0 0 46 46"><circle class="ring" cx="23" cy="23" r="19"/></svg></div>
+  <div class="loader-mark"><span>B</span><span>A</span><span>L</span><span>A</span><span>J</span><span>E</span><span>E</span></div>
+  <div class="loader-sub">Indian Agricultural Exports</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<header class="site-header">
+  <div class="container-fluid-custom nav-wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="22" r="21" stroke="#d99a16" stroke-width="1"/>
+        <path d="M22 8C22 8 30 15 30 23C30 27.4183 26.4183 31 22 31C17.5817 31 14 27.4183 14 23C14 15 22 8 22 8Z" fill="#2f7d46"/>
+        <path d="M22 12V29" stroke="#08140e" stroke-width="1"/>
+      </svg>
+      <span class="brand-text">BALAJEE<small>Enterprises · Est. Exporters</small></span>
+    </a>
+    <nav class="main-nav d-none d-lg-flex" aria-label="Primary navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <div class="nav-dropdown">
+        <a href="products.html" class="nav-link">Products <i class="bi bi-chevron-down caret"></i></a>
+        <div class="dropdown-panel">
+          <a href="products.html#red-chilli"><i class="bi bi-fire"></i> Red Chilli</a>
+          <a href="products.html#turmeric"><i class="bi bi-sun"></i> Turmeric</a>
+          <a href="products.html#black-pepper"><i class="bi bi-circle-fill"></i> Black Pepper</a>
+          <a href="products.html#cumin-seeds"><i class="bi bi-flower1"></i> Cumin Seeds</a>
+          <a href="products.html#fennel-seeds"><i class="bi bi-flower2"></i> Fennel Seeds</a>
+          <a href="products.html#black-cumin"><i class="bi bi-moon-stars"></i> Black Cumin</a>
+          <a href="products.html#poppy-seeds"><i class="bi bi-record-circle"></i> Poppy Seeds</a>
+          <a href="products.html#fenugreek"><i class="bi bi-leaf"></i> Fenugreek</a>
+          <a href="products.html#sesame-seeds"><i class="bi bi-egg"></i> Sesame Seeds</a>
+          <a href="products.html#cardamom"><i class="bi bi-gem"></i> Cardamom</a>
+          <a href="products.html#cloves"><i class="bi bi-stars"></i> Cloves</a>
+          <a href="products.html#star-anise"><i class="bi bi-asterisk"></i> Star Anise</a>
+          <a href="products.html#cinnamon"><i class="bi bi-layers"></i> Cinnamon</a>
+        </div>
+      </div>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+      <a href="contact.html" class="btn-balajee btn-primary-fill d-none d-lg-inline-flex">
+        <span>Contact Us</span><span class="btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+      </a>
+      <button class="nav-toggle d-lg-none" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="offcanvas-nav" aria-hidden="true">
+  <div class="offcanvas-backdrop"></div>
+  <div class="offcanvas-panel">
+    <button class="oc-close" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+    <a href="index.html" class="oc-link">Home</a>
+    <a href="about.html" class="oc-link">About Us</a>
+    <a href="products.html" class="oc-link oc-sub-toggle">Products <i class="bi bi-chevron-down caret"></i></a>
+    <div class="oc-sub">
+      <a href="products.html#red-chilli">Red Chilli</a>
+      <a href="products.html#turmeric">Turmeric</a>
+      <a href="products.html#black-pepper">Black Pepper</a>
+      <a href="products.html#cumin-seeds">Cumin Seeds</a>
+      <a href="products.html#fennel-seeds">Fennel Seeds</a>
+      <a href="products.html#black-cumin">Black Cumin</a>
+      <a href="products.html#poppy-seeds">Poppy Seeds</a>
+      <a href="products.html#fenugreek">Fenugreek</a>
+      <a href="products.html#sesame-seeds">Sesame Seeds</a>
+      <a href="products.html#cardamom">Cardamom</a>
+      <a href="products.html#cloves">Cloves</a>
+      <a href="products.html#star-anise">Star Anise</a>
+      <a href="products.html#cinnamon">Cinnamon</a>
+    </div>
+    <a href="services.html" class="oc-link">Services</a>
+    <a href="contact.html" class="oc-link">Contact</a>
+    <div class="oc-meta">
+      <a data-config-phone href="tel:"><i class="bi bi-telephone"></i> +91 6289987689</a>
+      <a data-config-email href="mailto:"><i class="bi bi-envelope"></i> Kaushalsethiaa10@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<section class="page-hero">
+  <div class="container-fluid-custom">
+    <span class="breadcrumb-mono">Home / About Us</span>
+    <h1>Rooted in India. Connected to the World.</h1>
+    <p class="lead">BALAJEE ENTERPRISES works at the intersection of Indian agriculture and international trade, preparing spices and produce for buyers who value consistency and clear communication.</p>
+  </div>
+</section>
+
+<!-- COMPANY INTRODUCTION -->
+<section class="section">
+  <div class="container-fluid-custom">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <span class="eyebrow">Our Story</span>
+        <h2>An Export Business Built on Indian Agriculture</h2>
+        <p class="lead" data-aos="fade-up">BALAJEE ENTERPRISES is an Indian agricultural and food-spice export business, working to connect the country's produce and spices with buyers across the world.</p>
+        <p data-aos="fade-up">Based out of Kolkata, West Bengal, the company is led by Kaushal Sethia, Head of Business Development, who works directly with international buyers to understand requirements and coordinate accordingly.</p>
+        <p data-aos="fade-up">Our sourcing philosophy is simple: work close to origin, prepare products with care, and communicate clearly with every buyer throughout the process.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="image-reveal image-3d" style="height:520px;">
+          <div class="reveal-mask"></div>
+          <img src="assets/images/about-hero.jpg" alt="Spices and agricultural produce ready for export"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200&auto=format&fit=crop';">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCING / QUALITY / EXPORT PHILOSOPHY -->
+<section class="section section-alt">
+  <div class="container-fluid-custom">
+    <div class="section-head mx-auto text-center">
+      <span class="eyebrow">What Guides Us</span>
+      <h2>Our Approach to Business</h2>
+    </div>
+    <div class="feature-grid" style="--tw:0;">
+      <div class="feature-card" style="border-color:var(--line);background:var(--surface-card);" data-aos="fade-up" data-aos-delay="0">
+        <i class="bi bi-geo-alt" style="color:var(--spice);"></i>
+        <h3 style="color:var(--ink);">Agricultural Sourcing</h3>
+        <p style="color:var(--ink-soft);">Products sourced with attention to origin and consistency, prepared for the requirements of export buyers.</p>
+      </div>
+      <div class="feature-card" style="border-color:var(--line);background:var(--surface-card);" data-aos="fade-up" data-aos-delay="80">
+        <i class="bi bi-patch-check" style="color:var(--spice);"></i>
+        <h3 style="color:var(--ink);">Product Quality Focus</h3>
+        <p style="color:var(--ink-soft);">Every batch is prepared with care, aiming for the consistency that regular buyers depend on.</p>
+      </div>
+      <div class="feature-card" style="border-color:var(--line);background:var(--surface-card);" data-aos="fade-up" data-aos-delay="160">
+        <i class="bi bi-globe2" style="color:var(--spice);"></i>
+        <h3 style="color:var(--ink);">Export-Oriented Approach</h3>
+        <p style="color:var(--ink-soft);">Coordination is built around what international shipping and buyer requirements actually need.</p>
+      </div>
+      <div class="feature-card" style="border-color:var(--line);background:var(--surface-card);" data-aos="fade-up" data-aos-delay="240">
+        <i class="bi bi-chat-dots" style="color:var(--spice);"></i>
+        <h3 style="color:var(--ink);">Customer Communication</h3>
+        <p style="color:var(--ink-soft);">Buyers are kept informed and consulted, so requirements are understood clearly from the start.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR APPROACH — PROCESS -->
+<section class="section">
+  <div class="container-fluid-custom">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <span class="eyebrow">How We Work</span>
+        <h2>Our Approach</h2>
+        <p class="lead" data-aos="fade-up">A clear, repeatable process keeps every order moving from Indian origin to the buyer's market, with quality checked at every stage.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="process-track">
+          <div class="process-step" data-aos="fade-up">
+            <div class="process-num">01</div>
+            <div class="process-copy"><h3>Product Sourcing</h3><p>Agricultural products and spices are sourced with attention to origin and consistency.</p></div>
+          </div>
+          <div class="process-step" data-aos="fade-up">
+            <div class="process-num">02</div>
+            <div class="process-copy"><h3>Quality Focus</h3><p>Products are checked for consistency before moving further into the process.</p></div>
+          </div>
+          <div class="process-step" data-aos="fade-up">
+            <div class="process-num">03</div>
+            <div class="process-copy"><h3>Preparation</h3><p>Products are prepared and packed according to the buyer's stated requirements.</p></div>
+          </div>
+          <div class="process-step" data-aos="fade-up">
+            <div class="process-num">04</div>
+            <div class="process-copy"><h3>Export Coordination</h3><p>Shipping and documentation are coordinated to keep the order on track.</p></div>
+          </div>
+          <div class="process-step" data-aos="fade-up">
+            <div class="process-num">05</div>
+            <div class="process-copy"><h3>Global Delivery</h3><p>The order is followed through to delivery, with communication kept open throughout.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LARGE IMAGE COMPOSITION -->
+<section class="section section-dark story-section">
+  <div class="container-fluid-custom">
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="story-media image-3d" style="height:480px;">
+          <img src="assets/images/about-compose-1.jpg" alt="Spice preparation for export"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1599909533144-6d6d3f2f3c34?q=80&w=1200&auto=format&fit=crop';">
+        </div>
+      </div>
+      <div class="col-lg-5 d-flex">
+        <div class="story-media image-3d" style="height:480px;width:100%;">
+          <img src="assets/images/about-compose-2.jpg" alt="Whole spices and seeds prepared for shipment"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1596040033229-b9820eebb013?q=80&w=900&auto=format&fit=crop';">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-primary cta-section">
+  <div class="container-fluid-custom">
+    <span class="eyebrow">Let's Talk Trade</span>
+    <h2>Ready to Source From India?</h2>
+    <p class="lead">Get in touch to discuss your agricultural and spice requirements with our team.</p>
+    <a href="contact.html" class="btn-balajee btn-outline-cream magnetic">
+      <span>Contact Us</span><span class="btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-leaf-bg" aria-hidden="true"><i class="bi bi-leaf-fill"></i></div>
+  <div class="container-fluid-custom">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-text">BALAJEE ENTERPRISES</span>
+        <p>Indian agricultural products for global markets.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn (placeholder)"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Instagram (placeholder)"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook (placeholder)"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html#red-chilli">Red Chilli</a></li>
+          <li><a href="products.html#turmeric">Turmeric</a></li>
+          <li><a href="products.html#black-pepper">Black Pepper</a></li>
+          <li><a href="products.html#cumin-seeds">Cumin Seeds</a></li>
+          <li><a href="products.html#cardamom">Cardamom</a></li>
+          <li><a href="products.html#cinnamon">Cinnamon</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>168-B, Cotton Street, Badabazar<br>Kolkata, West Bengal 700007<br>India</address>
+        <ul class="mt-3">
+          <li><a data-config-phone href="tel:"><i class="bi bi-telephone me-2"></i>+91 6289987689</a></li>
+          <li><a data-config-email href="mailto:"><i class="bi bi-envelope me-2"></i>Kaushalsethiaa10@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-config-year>2026</span> Balajee Enterprises. All rights reserved.</span>
+      <span>Indian Agricultural &amp; Spice Exports</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<div class="pm-overlay" id="product-modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="pm-dialog">
+    <div class="pm-media"><img src="" alt=""></div>
+    <div class="pm-body">
+      <button class="pm-close" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      <span class="eyebrow pm-category">Category</span>
+      <h3 class="pm-name">Product Name</h3>
+      <p class="pm-desc">Description</p>
+      <a href="contact.html" class="btn-balajee btn-primary-fill pm-enquire"><span>Enquire Now</span><span class="btn-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
